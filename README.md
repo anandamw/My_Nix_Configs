@@ -29,3 +29,16 @@ FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'root'@'localhost';
 
 EXIT;
+
+```
+### 1. ADD REPOSITORY UNSTABLE VERSION
+
+```bash
+
+sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable unstable
+
+sudo nix-channel --update
+
+sudo nixos-rebuild switch
+
+```
