@@ -30,7 +30,7 @@ SHOW GRANTS FOR 'root'@'localhost';
 EXIT;
 
 ```
-### 1. ADD REPOSITORY UNSTABLE VERSION
+### 2. Add Repository Unstable Version
 
 ```bash
 
