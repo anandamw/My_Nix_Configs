@@ -89,26 +89,29 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   wget
   curl
   vscode
   google-chrome
   anydesk
   php.packages.composer
-  php82
-  #php83
+  #php82
+  php83
   git
   nodejs_22
   neovim
+  zotero
   discord
   neofetch
   postman
   speedtest-cli
-  simplescreenrecorder
+  obs-studio
   gnome.gnome-shell-extensions
   gnome.gnome-tweaks
   vlc
+  gedit
+  libreoffice
+  drawio
   ];
 
 
