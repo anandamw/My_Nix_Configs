@@ -21,7 +21,6 @@ mysql -u root -p
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 
-
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
 
 FLUSH PRIVILEGES;
