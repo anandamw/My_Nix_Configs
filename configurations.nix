@@ -67,7 +67,7 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.nndmw = {
+  users.users.anandamw = {
     isNormalUser = true;
     description = "AnandaMw";
     extraGroups = [ "networkmanager" "wheel" ];
@@ -75,13 +75,14 @@
     #  thunderbird
     ];
   };
-
+  nixpkgs.config.packageOverrides = pkgs: {
+    unstable = import <unstable> {
+      inherit (pkgs) system;
+      config.allowUnfree = true;
+    };
+  };
   # Install firefox.
   programs.firefox.enable = true;
-  
-  #Install Flatpak
-  services.flatpak.enable = true;
-
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -114,8 +115,6 @@
   drawio
   ];
 
-
-
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -144,4 +143,3 @@
   system.stateVersion = "24.05"; # Did you read the comment?
 
 }
-
