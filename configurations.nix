@@ -110,9 +110,11 @@
   gnome.gnome-shell-extensions
   gnome.gnome-tweaks
   vlc
+  blender
   gedit
   libreoffice
   drawio
+  thunderbird
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
